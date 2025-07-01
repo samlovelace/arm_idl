@@ -1,3 +1,0 @@
-std_msgs/String command
-std_msgs/String type
-

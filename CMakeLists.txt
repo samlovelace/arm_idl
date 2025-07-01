@@ -10,13 +10,14 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME} 
-  "msg/Command.msg"
+  "msg/PlanCommand.msg"
   "msg/JointPositionWaypoint.msg"
   "msg/TaskPositionWaypoint.msg"
   "msg/Enable.msg"  
-  DEPENDENCIES std_msgs geometry_msgs
+  DEPENDENCIES std_msgs geometry_msgs sensor_msgs
 )
 
 ament_export_dependencies(rosidl_default_generators std_msgs geometry_msgs)
