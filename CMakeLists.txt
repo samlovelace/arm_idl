@@ -14,6 +14,7 @@ find_package(sensor_msgs REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME} 
   "msg/PlanCommand.msg"
+  "msg/PlanResponse.msg"
   "msg/JointPositionWaypoint.msg"
   "msg/TaskPositionWaypoint.msg"
   "msg/Enable.msg"  
